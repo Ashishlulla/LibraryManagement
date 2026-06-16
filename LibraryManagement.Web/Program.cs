@@ -7,6 +7,7 @@ using LibraryManagement.Domain.RepositoriesContracts;
 using LibraryManagement.Infrastructure.Persistence;
 using LibraryManagement.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +26,6 @@ builder.Services.AddDbContext<LibraryDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 
-
 //Adding Exception Handler Services
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
@@ -35,10 +35,20 @@ builder.Services.AddProblemDetails();
 builder.Services.AddValidatorsFromAssemblyContaining<BookAddRequestValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<BookUpdateRequestValidator>();
 
+//Adding Serilog configurations
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/AppLog-.txt")
+    .CreateLogger();
+builder.Host.UseSerilog();
+
 var app = builder.Build();
 
+Log.Logger.Information("App started"); 
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
+app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

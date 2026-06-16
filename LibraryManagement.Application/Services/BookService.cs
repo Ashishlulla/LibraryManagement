@@ -4,6 +4,8 @@ using LibraryManagement.Application.Exceptions;
 using LibraryManagement.Application.Interfaces;
 using LibraryManagement.Domain.Entities;
 using LibraryManagement.Domain.RepositoriesContracts;
+using Microsoft.Extensions.Logging;
+using System.Net;
 
 namespace LibraryManagement.Application.Services 
 {
@@ -15,12 +17,15 @@ namespace LibraryManagement.Application.Services
         private readonly IValidator<BookAddRequest> _addValidator;
         private readonly IValidator<BookUpdateRequest> _updateValidator;
 
+        private readonly ILogger<BookService> _logger;
+
         //Constructor
-        public BookService(IBookRepository bookRepository, IValidator<BookAddRequest> addValidator, IValidator<BookUpdateRequest> updateValidator) 
+        public BookService(IBookRepository bookRepository, IValidator<BookAddRequest> addValidator, IValidator<BookUpdateRequest> updateValidator, ILogger<BookService> logger) 
         {
             _bookRepository = bookRepository;
             _addValidator = addValidator;
             _updateValidator = updateValidator;
+            _logger = logger;
         }
 
 
@@ -50,6 +55,7 @@ namespace LibraryManagement.Application.Services
             //calling repository method to add new Book Object
             Book addedBook = await _bookRepository.AddAsync(bookRequest);
 
+            _logger.LogInformation($"created Book with Title = {addedBook.Title}");
             //returning Book response Object
             return addedBook.ToBookResponse();
         }
@@ -63,8 +69,12 @@ namespace LibraryManagement.Application.Services
             var result = await _bookRepository.DeleteAsync(id);
 
             if (result == false)
+            {
+                _logger.LogWarning($"Book Not found.BookId : {id}");
                 throw new NotFoundException($"Book with Id = {id} not found Operation UnSucessfull...");
-
+            }
+             
+            _logger.LogInformation($"Deleted the book with Id = {id}");
             return result;
         }
 
@@ -104,7 +114,9 @@ namespace LibraryManagement.Application.Services
             
             if (booktoFind is null)
             {
+                _logger.LogWarning($"Book Not found.BookId : {BookId}");
                 throw new NotFoundException($"Book with {BookId} not found. Please provide valid BookId");
+                
             }
             return booktoFind.ToBookResponse();
         }
@@ -188,6 +200,8 @@ namespace LibraryManagement.Application.Services
 
             if (existingbook == null)
             {
+                _logger.LogWarning($"Book Not found.BookId : {id}");
+
                 throw new NotFoundException($"No Book existing with id = {id},Please provide valid book id.");
             }
 
@@ -196,6 +210,8 @@ namespace LibraryManagement.Application.Services
             {
                 return null;
             }
+
+            _logger.LogInformation($"Updated the Book with id = {id}");
             return updatedBook.ToBookResponse();
         }
 

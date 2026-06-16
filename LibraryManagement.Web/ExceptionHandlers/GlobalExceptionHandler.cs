@@ -1,10 +1,17 @@
 ﻿using LibraryManagement.Application.Exceptions;
+using LibraryManagement.Application.Services;
 using Microsoft.AspNetCore.Diagnostics;
 
 namespace LibraryManagement.API.ExceptionHandlers
 {
     public class GlobalExceptionHandler : IExceptionHandler
     {
+        private readonly ILogger<GlobalExceptionHandler> _logger;
+
+        public GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) 
+        {
+            _logger = logger;
+        }
         public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
         {
             int statusCode;
@@ -35,6 +42,7 @@ namespace LibraryManagement.API.ExceptionHandlers
                 Message = message
             }, cancellationToken);
 
+            _logger.LogError(exception.Message, "Unhandled Exception occurred");
             return true;
         }
     }
