@@ -39,7 +39,8 @@ builder.Services.AddValidatorsFromAssemblyContaining<BookUpdateRequestValidator>
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Debug()
     .WriteTo.Console()
-    .WriteTo.File("Logs/AppLog-.txt")
+    .WriteTo.File("Logs/AppLog-.txt",
+     rollingInterval: RollingInterval.Day)
     .CreateLogger();
 builder.Host.UseSerilog();
 

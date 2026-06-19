@@ -42,7 +42,7 @@ namespace LibraryManagement.API.ExceptionHandlers
                 Message = message
             }, cancellationToken);
 
-            _logger.LogError(exception.Message, "Unhandled Exception occurred");
+            _logger.LogError(exception, "Unhandled Exception occurred");
             return true;
         }
     }

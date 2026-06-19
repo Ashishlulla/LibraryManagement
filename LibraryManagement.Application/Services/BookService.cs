@@ -5,7 +5,7 @@ using LibraryManagement.Application.Interfaces;
 using LibraryManagement.Domain.Entities;
 using LibraryManagement.Domain.RepositoriesContracts;
 using Microsoft.Extensions.Logging;
-using System.Net;
+
 
 namespace LibraryManagement.Application.Services 
 {
@@ -36,14 +36,15 @@ namespace LibraryManagement.Application.Services
         {
             if (bookAddRequest == null)
             {
-                throw new BadRequestException("Request to  book cannot be null");
+                throw new BadRequestException("Request to book cannot be null");
             }
 
             var validationResult = await _addValidator.ValidateAsync(bookAddRequest);
             
             if (!validationResult.IsValid)
             {
-                throw new BadRequestException(string.Join(", ", validationResult.Errors.Select(e=>e.ErrorMessage)));   
+                throw new BadRequestException(string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage)));
+                
             }
 
             //converting BookAddRequest Object to Book Object
@@ -55,7 +56,7 @@ namespace LibraryManagement.Application.Services
             //calling repository method to add new Book Object
             Book addedBook = await _bookRepository.AddAsync(bookRequest);
 
-            _logger.LogInformation($"created Book with Title = {addedBook.Title}");
+            _logger.LogInformation($"created Book with Title : {addedBook.Title}");
             //returning Book response Object
             return addedBook.ToBookResponse();
         }
@@ -70,7 +71,7 @@ namespace LibraryManagement.Application.Services
 
             if (result == false)
             {
-                _logger.LogWarning($"Book Not found.BookId : {id}");
+                _logger.LogWarning($"Book Not found. BookId : {id}");
                 throw new NotFoundException($"Book with Id = {id} not found Operation UnSucessfull...");
             }
              

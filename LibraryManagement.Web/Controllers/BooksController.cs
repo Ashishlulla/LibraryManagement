@@ -10,10 +10,12 @@ namespace LibraryManagement.API.Controllers
     public class BooksController : ControllerBase
     {
         private readonly IBookService _bookService;
+        private readonly ILogger<BooksController> _logger;
 
-        public BooksController(IBookService bookService) 
+        public BooksController(IBookService bookService,ILogger<BooksController> logger) 
         {
             _bookService = bookService;
+            _logger = logger;
         }
 
         //POST BOOK(ADD BOOK) CONTROLLER ACTION

@@ -5,5 +5,6 @@
   <Project Path="LibraryManagement.Application/LibraryManagement.Application.csproj" />
   <Project Path="LibraryManagement.Domain/LibraryManagement.Domain.csproj" />
   <Project Path="LibraryManagement.Infrastructure/LibraryManagement.Infrastructure.csproj" />
+  <Project Path="LibraryManagement.Tests/LibraryManagement.Tests.csproj" Id="e209dcb5-c2ad-4a93-979c-9df70980224e" />
   <Project Path="LibraryManagement.Web/LibraryManagement.API.csproj" />
 </Solution>
