@@ -9,7 +9,7 @@ using LibraryManagement.Domain.Entities;
 using LibraryManagement.Domain.RepositoriesContracts;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System.Net;
+
 
 namespace LibraryManagement.Tests
 {
@@ -175,10 +175,13 @@ namespace LibraryManagement.Tests
             });
 
             exception.Message.Should().Be("Book Id must not be emppty...");
+
+            //Verify
+            _bookRepositoryMock.Verify(v => v.GetByIdAsync(It.IsAny<Guid>()), Times.Never);
         }
 
         [Fact]
-        public async Task GetBookByIdAsync_ShouldThrowNotFoundException_WhenBookDoesNotExist() 
+        public async Task GetBookByIdAsync_ShouldThrowNotFoundException_WhenBookDoesNotExists() 
         {
             //Arrange
             Book book = new Book
@@ -201,6 +204,68 @@ namespace LibraryManagement.Tests
             });
 
             exception.Message.Should().Be($"Book with {idToFind} not found. Please provide valid BookId");
+
+            //Verify
+            _bookRepositoryMock.Verify(v => v.GetByIdAsync(idToFind),Times.Once);
+        }
+
+        [Fact]
+        public async Task DeleteBookById_ShouldDeleteBook_WhenExist() 
+        {
+            //Arrange
+            Book book = new Book
+            {
+                BookId = Guid.Parse("D6C4243B-6F19-4271-8E2E-C1E38B9B16B8"),
+                Title = "Test Book",
+                Author = "Test Name",
+                Price = 599,
+                PublishedDate = DateTime.UtcNow,
+            };
+            Guid id = book.BookId;
+
+            _bookRepositoryMock.Setup(b => b.DeleteAsync(It.IsAny<Guid>())).ReturnsAsync(true);
+
+            //Act
+            bool isSucceed = await _bookservice.DeleteBookAsync(id);
+
+            //Assert
+            isSucceed.Should().BeTrue();
+
+            //Verify
+            _bookRepositoryMock.Verify(v=>v.DeleteAsync(id), Times.Once);
+        }
+
+        [Fact]
+        public async Task DeleteBookAsync_ShouldThrowBadRequestException_WhenBookIdIsEmpty()
+        {
+            // Arrange
+            Guid id = Guid.Empty;
+
+            // Act + Assert
+            BadRequestException exception =
+                await Assert.ThrowsAsync<BadRequestException>(
+                    () => _bookservice.DeleteBookAsync(id));
+
+            exception.Message.Should().Be("Book id cannot be empty");
+        }
+
+        [Fact]
+        public async Task DeleteBookAsync_ShouldThrowNotFoundException_WhenBookDoesNotExist()
+        {
+            // Arrange
+            Guid id = Guid.NewGuid();
+
+            _bookRepositoryMock
+                .Setup(b => b.DeleteAsync(It.IsAny<Guid>()))
+                .ReturnsAsync(false);
+
+            // Act + Assert
+            NotFoundException exception =
+                await Assert.ThrowsAsync<NotFoundException>(
+                    () => _bookservice.DeleteBookAsync(id));
+
+            exception.Message.Should()
+                .Be($"Book with Id = {id} not found Operation UnSucessfull...");
         }
     }
 }
