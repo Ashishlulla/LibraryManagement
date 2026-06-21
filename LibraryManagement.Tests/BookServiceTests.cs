@@ -9,9 +9,7 @@ using LibraryManagement.Domain.Entities;
 using LibraryManagement.Domain.RepositoriesContracts;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Net;
 
 namespace LibraryManagement.Tests
 {
@@ -125,6 +123,84 @@ namespace LibraryManagement.Tests
             _bookRepositoryMock.Verify(b => b.AddAsync(It.IsAny<Book>()), Times.Never);
 
 
+        }
+
+        [Fact]
+        public async Task GetBookByIdAsync_ShouldReturnBookResponse_WhenBookExists()
+        {
+            // Arrange
+            Book book = new Book
+            {
+                BookId = Guid.NewGuid(),
+                Title = "Test Book",
+                Author = "Test Name",
+                Price = 599,
+                PublishedDate = DateTime.UtcNow,
+            };
+
+            _bookRepositoryMock.Setup(b => b.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync(book);
+            
+            // Act
+            BookResponse? actual = await _bookservice.GetBookByIdAsync(book.BookId);
+
+            // Assert
+            actual.Should().NotBeNull();
+
+            actual.Title.Should().Be(book.Title);
+            actual.Author.Should().Be(book.Author);
+            actual.Price.Should().Be(book.Price);
+            actual.PublishedDate.Should().Be(book.PublishedDate);
+
+            //Verify
+            _bookRepositoryMock.Verify(v => v.GetByIdAsync(It.IsAny<Guid>()), Times.Once);
+        }
+
+        [Fact]
+        public async Task GetBookByIdAsync_ShouldThrowBadRequestException_WhenBookIdIsEmpty() 
+        {
+            //Arrange
+            Book book = new Book
+            {
+                BookId = Guid.Empty,
+                Title = "Test Book",
+                Author = "Test Name",
+                Price = 599,
+                PublishedDate = DateTime.UtcNow,
+            };
+
+            //Act + Assert
+            BadRequestException exception = await Assert.ThrowsAnyAsync<BadRequestException>(async () =>
+            {
+                await _bookservice.GetBookByIdAsync(book.BookId);
+            });
+
+            exception.Message.Should().Be("Book Id must not be emppty...");
+        }
+
+        [Fact]
+        public async Task GetBookByIdAsync_ShouldThrowNotFoundException_WhenBookDoesNotExist() 
+        {
+            //Arrange
+            Book book = new Book
+            {
+                BookId = Guid.Parse("D6C4243B-6F19-4271-8E2E-C1E38B9B16B8"),
+                Title = "Test Book",
+                Author = "Test Name",
+                Price = 599,
+                PublishedDate = DateTime.UtcNow,
+            };
+
+            Guid idToFind = Guid.NewGuid();
+
+            _bookRepositoryMock.Setup(b => b.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync((Book?) null);
+
+            //Act + Assert
+            NotFoundException exception = await Assert.ThrowsAsync<NotFoundException>(async () =>
+            {
+                await _bookservice.GetBookByIdAsync(idToFind);
+            });
+
+            exception.Message.Should().Be($"Book with {idToFind} not found. Please provide valid BookId");
         }
     }
 }
