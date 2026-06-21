@@ -105,10 +105,9 @@ namespace LibraryManagement.Application.Services
         //METHOD -- GETBOOKBYID SERVICE METHOD
         public async Task<BookResponse?> GetBookByIdAsync(Guid BookId)
         {
-
             if (BookId == Guid.Empty)
             {
-                throw new BadRequestException(nameof(BookId));
+                throw new BadRequestException("Book Id must not be emppty...");
             }
 
             Book? booktoFind = await _bookRepository.GetByIdAsync(BookId);
@@ -214,8 +213,6 @@ namespace LibraryManagement.Application.Services
 
             _logger.LogInformation($"Updated the Book with id = {id}");
             return updatedBook.ToBookResponse();
-        }
-
-        
+        }        
     }
 }
