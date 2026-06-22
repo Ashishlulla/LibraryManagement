@@ -185,9 +185,15 @@ namespace LibraryManagement.Application.Services
         //METHOD --UPDATEBOOK SERVICE METHOD
         public async Task<BookResponse?> UpdateBookAsync(Guid id, BookUpdateRequest? request)
         {
+            
             if (request == null)
             {
                 throw new BadRequestException("request to update cannot be null");
+            }
+
+            if (request.BookId == Guid.Empty || id == Guid.Empty)
+            {
+                throw new BadRequestException("Book Id cannot be empty");
             }
 
             var validationResult = await _updateValidator.ValidateAsync(request);
@@ -204,13 +210,17 @@ namespace LibraryManagement.Application.Services
 
                 throw new NotFoundException($"No Book existing with id = {id},Please provide valid book id.");
             }
+            existingbook.Title = request.Title;
+            existingbook.Author = request.Author;
+            existingbook.Price = request.Price;
+            existingbook.PublishedDate = request.PublishedDate;
 
             Book? updatedBook = await _bookRepository.UpdateAsync(existingbook);
             if (updatedBook == null)
             {
                 return null;
             }
-
+            
             _logger.LogInformation($"Updated the Book with id = {id}");
             return updatedBook.ToBookResponse();
         }        

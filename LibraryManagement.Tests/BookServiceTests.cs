@@ -37,6 +37,8 @@ namespace LibraryManagement.Tests
 
             _bookservice = new BookService(_bookRepositoryMock.Object, _addValidatorMock.Object, _updateValidatorMock.Object,_loggerMock.Object);
         }
+
+        #region AddBook
         [Fact]
         public async Task CreateBookAsync_ShouldReturnBookResponse_WhenBookIsCreated() 
         {
@@ -124,7 +126,9 @@ namespace LibraryManagement.Tests
 
 
         }
+        #endregion
 
+        #region GetBookById
         [Fact]
         public async Task GetBookByIdAsync_ShouldReturnBookResponse_WhenBookExists()
         {
@@ -208,7 +212,9 @@ namespace LibraryManagement.Tests
             //Verify
             _bookRepositoryMock.Verify(v => v.GetByIdAsync(idToFind),Times.Once);
         }
+        #endregion
 
+        #region DeleteBookById
         [Fact]
         public async Task DeleteBookById_ShouldDeleteBook_WhenExist() 
         {
@@ -267,5 +273,183 @@ namespace LibraryManagement.Tests
             exception.Message.Should()
                 .Be($"Book with Id = {id} not found Operation UnSucessfull...");
         }
+        #endregion
+
+        #region UpdateBook
+
+        [Fact]
+        public async Task UpdateBookAsync_ShouldThrowBadRequestException_WhenBookIsNull()
+        {
+            //Arrange
+            BookUpdateRequest? request = null;
+            Guid id = Guid.NewGuid();
+
+            //Act + Assert
+            BadRequestException exception = await Assert.ThrowsAsync<BadRequestException>(async () => 
+            {
+                await _bookservice.UpdateBookAsync(id, request);
+            });
+
+            exception.Message.Should().Be("request to update cannot be null");
+
+            //Verify
+            _bookRepositoryMock.Verify(v=>v.UpdateAsync(It.IsAny<Book>()), Times.Never);
+        }
+
+        [Fact]
+        public async Task UpdateBookAsync_ShouldThrowBadRequestException_WhenBookIdIsEmpty()
+        {
+            //Arrange
+
+            BookUpdateRequest request = new BookUpdateRequest
+            {
+                BookId = Guid.Empty,
+                Title = "Title Updated",
+                Author = "Author Updated",
+                Price = 989,
+                PublishedDate = DateTime.UtcNow,
+            };
+
+            //Act + Assert
+            BadRequestException exception = await Assert.ThrowsAsync<BadRequestException>(async () =>
+            {
+                await _bookservice.UpdateBookAsync(Guid.NewGuid(), request);
+            });
+
+            exception.Message.Should().Be("Book Id cannot be empty");
+
+            //Verify
+            _bookRepositoryMock.Verify(v=>v.UpdateAsync(It.IsAny<Book>()), Times.Never);
+        }
+
+        [Fact]
+        public async Task UpdateBookAsync_ShouldThrowNotFoundException_WhenBookDoesNotExist()
+        {
+            //Arrange
+            Book book = new Book
+            {
+                BookId = Guid.NewGuid(),
+                Title = "Test Title",
+                Author = "Test Author",
+                Price = 899,
+                PublishedDate = DateTime.UtcNow,
+            };
+            BookUpdateRequest request = new BookUpdateRequest 
+            {
+                BookId = Guid.Parse("526650CB-C242-49FE-B61E-396621BE8F55"),
+                Title = "Updated Title",
+                Author = "Updated Author",
+                Price = 499,
+                PublishedDate = DateTime.Now
+            };
+
+            Guid id = Guid.NewGuid();
+            ValidationResult validationResult = new ValidationResult();
+
+            _updateValidatorMock.Setup(v=>v.ValidateAsync(request, default)).ReturnsAsync(validationResult);
+
+            _bookRepositoryMock.Setup(repo => repo.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync((Book?)null);
+            //Act + Assert
+            NotFoundException exception = await Assert.ThrowsAsync<NotFoundException>(async () => 
+            {
+                await _bookservice.UpdateBookAsync(id, request);
+            });
+
+            exception.Message.Should().Be($"No Book existing with id = {id},Please provide valid book id.");
+
+            //Verify
+            _updateValidatorMock.Verify(v => v.ValidateAsync(request, default), Times.Once);
+            _bookRepositoryMock.Verify(v=>v.GetByIdAsync(id), Times.Once);
+
+            _bookRepositoryMock.Verify(v => v.UpdateAsync(It.IsAny<Book>()), Times.Never);
+        }
+
+        [Fact]
+        public async Task UpdateBookAsync_ShouldReturnUpdatedBook_WhenBookExists()
+        {
+            //Arrange
+            Book book = new Book
+            {
+                BookId = Guid.Parse("426650CB-C242-49FE-B61E-396621BE8F55"),
+                Title = "Test Title",
+                Author = "Test Author",
+                Price = 899,
+                PublishedDate = DateTime.Parse("2000-01-01"),
+            };
+            BookUpdateRequest request = new BookUpdateRequest
+            {
+                BookId = book.BookId,
+                Title = "Updated Title",
+                Author = "Updated Author",
+                Price = 499,
+                PublishedDate = DateTime.Parse("1990-01-01")
+            };
+
+            Guid id = book.BookId;
+            ValidationResult validationResult = new ValidationResult();
+
+            _updateValidatorMock.Setup(v=>v.ValidateAsync(request, default)).ReturnsAsync(validationResult);
+
+            _bookRepositoryMock.Setup(repo => repo.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync(book);
+            _bookRepositoryMock.Setup(repo => repo.UpdateAsync(It.IsAny<Book>())).ReturnsAsync(book);
+
+            //Act
+            BookResponse? actual = await _bookservice.UpdateBookAsync(id, request);
+
+            //Assert
+            actual.Should().NotBeNull();
+
+            actual.Title.Should().Be(request.Title);
+            actual.Author.Should().Be(request.Author);
+            actual.Price.Should().Be(request.Price);
+            actual.PublishedDate.Should().Be(request.PublishedDate);
+
+            //Verify
+            _updateValidatorMock.Verify(v => v.ValidateAsync(request, default), Times.Once);
+
+            _bookRepositoryMock.Verify(v => v.UpdateAsync(It.Is<Book>(b=>
+            b.Title ==request.Title && 
+            b.Author ==request.Author && 
+            b.Price ==request.Price && 
+            b.PublishedDate == request.PublishedDate))
+            , Times.Once);
+
+            _bookRepositoryMock.Verify(v => v.GetByIdAsync(id), Times.Once);
+        }
+        [Fact]
+        public async Task UpdateBookAsync_ShouldThrowBadRequestException_WhenValidationFails() 
+        {
+            //Arrange
+            BookUpdateRequest request = new BookUpdateRequest
+            {
+                BookId = Guid.NewGuid(),
+                Title = "",
+                Author = "",
+                Price = 899,
+                PublishedDate = DateTime.Now
+            };
+
+
+            List<ValidationFailure> failures = new List<ValidationFailure>
+            {
+                new ValidationFailure("Title", "Title cannot be empty"),
+                new ValidationFailure("Author", "Author cannot be empty"),
+            };
+
+            ValidationResult validationResult = new ValidationResult(failures);
+            _updateValidatorMock.Setup(v=>v.ValidateAsync(request, default)).ReturnsAsync(validationResult);
+            //Act + Assert
+            BadRequestException exception = await Assert.ThrowsAsync<BadRequestException>(async () => 
+            {
+                await _bookservice.UpdateBookAsync(request.BookId, request);
+            });
+
+            exception.Message.Should().Be(string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage)));
+
+            //Verify
+            _updateValidatorMock.Verify(v => v.ValidateAsync(request, default), Times.Once);
+            _bookRepositoryMock.Verify(v=>v.UpdateAsync(It.IsAny<Book>()),Times.Never);
+        }
+        #endregion
     }
 }
