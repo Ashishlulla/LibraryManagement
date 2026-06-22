@@ -13,7 +13,7 @@ namespace LibraryManagement.Application.Interfaces
         Task<BookResponse?> GetBookByIdAsync(Guid BookId);
         Task<BookResponse?> UpdateBookAsync(Guid id, BookUpdateRequest? bookUpdateRequest);
 
-        Task<PagedResult<BookResponse>> GetFilteredBooksAsync(string searchBy, string searchString, int PageSize, int PageNumber);
+        Task<PagedResult<BookResponse?>> GetFilteredBooksAsync(string searchBy, string searchString, int PageSize, int PageNumber);
         Task<PagedResult<BookResponse>> GetSortedBooksAsync(string sortBy, string sortOrder, int PageSize, int PageNumber);
         Task<bool> DeleteBookAsync(Guid id);
     }

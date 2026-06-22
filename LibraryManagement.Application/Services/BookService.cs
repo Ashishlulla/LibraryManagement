@@ -122,17 +122,30 @@ namespace LibraryManagement.Application.Services
         }
 
         //METHOD --GET FILTERED BOOK SERVICE METHOD
-        public async Task<PagedResult<BookResponse>> GetFilteredBooksAsync(string searchBy, string searchString, int PageSize, int PageNumber)
+        public async Task<PagedResult<BookResponse?>> GetFilteredBooksAsync(string searchBy, string searchString, int PageSize, int PageNumber)
         {
-            List<Book> filteredBooks = await _bookRepository.GetFilteredBooksAsync(searchBy, searchString, PageSize, PageNumber);
+            List<string> searchFields = new()
+            {
+                nameof(Book.Title),
+                nameof(Book.Author),
+                nameof(Book.Price),
+                nameof(Book.PublishedDate)
+            };
+
+            if (!searchFields.Contains(searchBy, StringComparer.OrdinalIgnoreCase))
+            {
+                throw new BadRequestException(
+                    $"Invalid search field.");
+            }
+            List<Book?> filteredBooks = await _bookRepository.GetFilteredBooksAsync(searchBy, searchString, PageSize, PageNumber);
             int totalCount = filteredBooks.Count();
 
             if (totalCount == 0)
             {
-                throw new NotFoundException($"No Data exist for provided input searchBy = {searchBy} and searchString = {searchString} ");
+                throw new NotFoundException($"No Data exist for provided input searchBy = {searchBy} and searchString = {searchString}");
             }
 
-            return new PagedResult<BookResponse>
+            return new PagedResult<BookResponse?>
             {
                 items = filteredBooks.Select(b => new BookResponse
                 {
@@ -141,7 +154,7 @@ namespace LibraryManagement.Application.Services
                     Author = b.Author,
                     Price = b.Price,
                     PublishedDate = b.PublishedDate
-                }).ToList(),
+                }).ToList()!,
 
                 PageSize = PageSize,
                 PageNumber = PageNumber,

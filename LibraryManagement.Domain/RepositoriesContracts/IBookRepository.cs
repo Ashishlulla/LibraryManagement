@@ -13,7 +13,7 @@ namespace LibraryManagement.Domain.RepositoriesContracts
 
         Task<Book?> UpdateAsync(Book book);
         Task<bool> DeleteAsync(Guid id);
-        Task<List<Book>> GetFilteredBooksAsync(string searchBy , string searchString, int PageSize, int PageNumber);
+        Task<List<Book?>> GetFilteredBooksAsync(string searchBy , string searchString, int PageSize, int PageNumber);
         Task<List<Book>> GetSortedBooksAsync(string sortBy, string sortOrder, int PageSize, int PageNumber);
         Task SaveChangesAsync();
     }

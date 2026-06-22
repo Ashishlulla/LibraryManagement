@@ -61,7 +61,7 @@ namespace LibraryManagement.Infrastructure.Repositories
             return await _dbContext.Books.FirstOrDefaultAsync(b=>b.BookId == id);
         }
 
-        public async Task<List<Book>> GetFilteredBooksAsync(string searchBy, string searchString, int PageSize, int PageNumber)
+        public async Task<List<Book?>> GetFilteredBooksAsync(string searchBy, string searchString, int PageSize, int PageNumber)
         {
             IQueryable<Book> query = _dbContext.Books;
 
@@ -88,6 +88,8 @@ namespace LibraryManagement.Infrastructure.Repositories
                         query = query.Where(b => b.PublishedDate.Date == publisheddate.Date);
                     }
                     break;
+
+              
             }
             return await query
                 .OrderBy(b => b.Title)
@@ -116,6 +118,8 @@ namespace LibraryManagement.Infrastructure.Repositories
 
                 ("PublishedDate", "asc") => query.OrderBy(b => b.PublishedDate),
                 ("PublishedDate", "desc") => query.OrderByDescending(b => b.PublishedDate),
+
+                _ => throw new ArgumentException("Invalid sortBy or sortOrder.")
             };
 
             return await query

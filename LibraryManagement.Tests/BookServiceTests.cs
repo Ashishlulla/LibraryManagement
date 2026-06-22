@@ -38,6 +38,7 @@ namespace LibraryManagement.Tests
             _bookservice = new BookService(_bookRepositoryMock.Object, _addValidatorMock.Object, _updateValidatorMock.Object,_loggerMock.Object);
         }
 
+      
         #region AddBook
         [Fact]
         public async Task CreateBookAsync_ShouldReturnBookResponse_WhenBookIsCreated() 
@@ -276,7 +277,6 @@ namespace LibraryManagement.Tests
         #endregion
 
         #region UpdateBook
-
         [Fact]
         public async Task UpdateBookAsync_ShouldThrowBadRequestException_WhenBookIsNull()
         {
@@ -449,6 +449,144 @@ namespace LibraryManagement.Tests
             //Verify
             _updateValidatorMock.Verify(v => v.ValidateAsync(request, default), Times.Once);
             _bookRepositoryMock.Verify(v=>v.UpdateAsync(It.IsAny<Book>()),Times.Never);
+            _bookRepositoryMock.Verify(v=>v.GetByIdAsync(It.IsAny<Guid>()), Times.Never);
+        }
+        #endregion
+
+        #region GetFilteredBooks
+        [Fact]
+        public async Task GetFilteredBooksAsync_ShouldReturnFilteredBooks_WhenTitleMatches() 
+        {
+            //Arrange
+            List<Book> books = new()
+            {
+                new Book
+                {
+                    BookId = Guid.NewGuid(),
+                    Title = "Clean Code",
+                    Author = "Robert Martin",
+                    Price = 550,
+                    PublishedDate = new DateTime(2008, 8, 1)
+                }
+            }; 
+            string searchBy = "Title";
+            string searchString = "Code";
+
+            _bookRepositoryMock.Setup(repo => repo.GetFilteredBooksAsync(searchBy, searchString, 4, 1)).ReturnsAsync(books);
+
+            //Act
+            PagedResult<BookResponse> actual = await _bookservice.GetFilteredBooksAsync(searchBy, searchString, 4, 1);
+
+            //Assert
+            actual.Should().NotBeNull();
+            actual.items.Should().HaveCount(1);
+            actual.items.First().Title.Should().Be("Clean Code");
+            actual.TotalCount.Should().Be(1);
+            actual.TotalPages.Should().Be(1);
+
+            //Verify
+            _bookRepositoryMock.Verify(v=>v.GetFilteredBooksAsync(searchBy, searchString, 4, 1), Times.Once);
+        }
+
+        [Fact]
+        public async Task GetFilteredBooksAsync_ShouldReturnFilteredBooks_WhenAuthorMatches() 
+        {
+            //Arrange
+            List<Book> books = new()
+            {
+                new Book
+                {
+                    BookId = Guid.NewGuid(),
+                    Title = "Tes Book 1",
+                    Author = "Ashish",
+                    Price = 550,
+                    PublishedDate = new DateTime(2008, 8, 1)
+                },
+                new Book
+                {
+                    BookId = Guid.NewGuid(),
+                    Title = "Test Book 2",
+                    Author = "Ashish",
+                    Price = 550,
+                    PublishedDate = new DateTime(2026, 8, 1)
+                },
+
+            };
+            string searchBy = "Author";
+            string searchString = "Ashish";
+
+            _bookRepositoryMock.Setup(repo => repo.GetFilteredBooksAsync(searchBy, searchString, 4, 1)).ReturnsAsync(books);
+
+            //Act
+            PagedResult<BookResponse> actual = await _bookservice.GetFilteredBooksAsync(searchBy, searchString, 4, 1);
+
+            //Assert
+            actual.Should().NotBeNull();
+            actual.items.Should().HaveCount(2);
+            actual.items.First().Author.Should().Be("Ashish");
+            actual.TotalCount.Should().Be(2);
+            actual.TotalPages.Should().Be(1);
+
+            //Verify
+            _bookRepositoryMock.Verify(v => v.GetFilteredBooksAsync(searchBy, searchString, 4, 1), Times.Once);
+        }
+
+        [Fact]
+        public async Task GetFilteredBooksAsync_ShouldThrowNotFoundException_WhenNoBooksMatch()
+        {
+            // Arrange
+            string searchBy = "Title";
+            string searchString = "saaf";
+
+            _bookRepositoryMock
+                .Setup(repo => repo.GetFilteredBooksAsync(searchBy, searchString, 4, 1))
+                .ReturnsAsync(new List<Book>());
+
+            // Act
+            NotFoundException exception =
+                await Assert.ThrowsAsync<NotFoundException>(() =>
+                    _bookservice.GetFilteredBooksAsync(searchBy, searchString, 4, 1));
+
+            // Assert
+            exception.Message.Should().Be(
+                $"No Data exist for provided input searchBy = {searchBy} and searchString = {searchString}");
+
+            // Verify
+            _bookRepositoryMock.Verify(
+                repo => repo.GetFilteredBooksAsync(searchBy, searchString, 4, 1),
+                Times.Once);
+        }
+        [Fact]
+        public async Task GetFilteredBooksAsync_ShouldThrowBadRequestException_WhenSearchByIsInvalid()
+        {
+            //Arrange
+            Book book = new Book
+            {
+                BookId = Guid.NewGuid(),
+                Title = "Test Book",
+                Author = "Test Author",
+                Price = 899,
+                PublishedDate = DateTime.Parse("2000-01-01")
+            };
+            string searchBy = "Test search By";
+            string searchString = "Test searchString";
+
+            //Act + Assert
+            BadRequestException exception = await Assert.ThrowsAsync<BadRequestException>(async () =>
+            {
+                await _bookservice.GetFilteredBooksAsync(searchBy, searchString, 4, 1);
+            });
+
+            exception.Message.Should().Be($"Invalid search field.");
+
+            //Verify
+            _bookRepositoryMock.Verify(
+            repo => repo.GetFilteredBooksAsync(
+                It.IsAny<string>(),
+                It.IsAny<string>(),
+                It.IsAny<int>(),
+                It.IsAny<int>()),
+            Times.Never);
         }
         #endregion
     }
