@@ -1,0 +1,776 @@
+2026-06-22 18:25:28.607 +05:30 [INF] App started
+2026-06-22 18:25:28.950 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 18:25:28.956 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 18:25:29.348 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 18:25:29.351 +05:30 [INF] Hosting environment: Development
+2026-06-22 18:25:29.352 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 18:25:30.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 18:25:30.460 +05:30 [INF] HTTP GET / responded 404 in 2.4362 ms
+2026-06-22 18:25:30.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 203.7908ms
+2026-06-22 18:25:30.548 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 18:25:38.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger - null null
+2026-06-22 18:25:38.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger - 301 null null 17.5013ms
+2026-06-22 18:25:38.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 18:25:38.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 169.5253ms
+2026-06-22 18:25:38.501 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 18:25:38.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 18:25:38.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 18:25:38.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 18:25:38.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 200 152 text/css 34.9755ms
+2026-06-22 18:25:38.542 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 18:25:38.547 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 200 null application/javascript;charset=utf-8 4.9677ms
+2026-06-22 18:25:38.554 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 18:25:38.555 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 18:25:38.578 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 200 26499 text/css 76.9541ms
+2026-06-22 18:25:38.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 200 76613 text/javascript 76.2391ms
+2026-06-22 18:25:38.585 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 31.3062ms
+2026-06-22 18:25:38.591 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 200 418599 text/javascript 89.067ms
+2026-06-22 18:25:38.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.3951ms
+2026-06-22 18:25:38.856 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 18:25:38.876 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.13ms
+2026-06-22 18:25:38.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/favicon-32x32.png - null null
+2026-06-22 18:25:38.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/favicon-32x32.png - 200 628 image/png 9.1647ms
+2026-06-22 18:46:45.063 +05:30 [INF] App started
+2026-06-22 18:46:45.373 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 18:46:45.378 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 18:46:45.589 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 18:46:45.591 +05:30 [INF] Hosting environment: Development
+2026-06-22 18:46:45.592 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 18:46:46.377 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 18:46:46.551 +05:30 [INF] HTTP GET / responded 404 in 1.9304 ms
+2026-06-22 18:46:46.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 187.1764ms
+2026-06-22 18:46:46.581 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 18:47:01.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 18:47:01.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 154.9334ms
+2026-06-22 18:47:01.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 18:47:01.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 18:47:01.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 18:47:01.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 18:47:01.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 18:47:01.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 40.8871ms
+2026-06-22 18:47:01.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 41.3754ms
+2026-06-22 18:47:01.326 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 18.6647ms
+2026-06-22 18:47:01.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 43.2728ms
+2026-06-22 18:47:01.329 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 18:47:01.336 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 18:47:01.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 55.1667ms
+2026-06-22 18:47:01.343 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 14.3925ms
+2026-06-22 18:47:01.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.671ms
+2026-06-22 18:47:01.606 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 18:47:01.630 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.7967ms
+2026-06-22 18:47:40.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/4/1 - null null
+2026-06-22 18:47:40.409 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:47:40.469 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 18:47:42.090 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-22 18:47:45.746 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 18:47:45.863 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 18:47:45.912 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 5430.3829ms
+2026-06-22 18:47:45.917 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:47:45.920 +05:30 [INF] HTTP GET /api/Books/4/1 responded 200 in 5514.2613 ms
+2026-06-22 18:47:45.939 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/4/1 - 200 null application/json; charset=utf-8 5539.756ms
+2026-06-22 18:55:33.254 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Books - application/json 125
+2026-06-22 18:55:33.261 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 18:55:33.281 +05:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] AddBook(LibraryManagement.Application.DTO.BookAddRequest) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 18:55:33.555 +05:30 [INF] created Book with Title : Swagger Test Book
+2026-06-22 18:55:33.564 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'LibraryManagement.Application.DTO.BookResponse'.
+2026-06-22 18:55:33.623 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API) in 337.2944ms
+2026-06-22 18:55:33.631 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 18:55:33.634 +05:30 [INF] HTTP POST /api/Books responded 201 in 373.8411 ms
+2026-06-22 18:55:33.641 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Books - 201 null application/json; charset=utf-8 386.5948ms
+2026-06-22 18:55:55.196 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/4/1 - null null
+2026-06-22 18:55:55.203 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:55:55.206 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 18:55:55.420 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 18:55:55.433 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 18:55:55.439 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 229.3253ms
+2026-06-22 18:55:55.449 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:55:55.454 +05:30 [INF] HTTP GET /api/Books/4/1 responded 200 in 251.2925 ms
+2026-06-22 18:55:55.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/4/1 - 200 null application/json; charset=utf-8 269.4687ms
+2026-06-22 18:56:10.902 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 18:56:10.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 12.1823ms
+2026-06-22 18:56:10.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 18:56:10.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 18:56:10.944 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 18:56:10.944 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 18:56:10.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 4.706ms
+2026-06-22 18:56:10.951 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 7.5171ms
+2026-06-22 18:56:10.954 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 18:56:10.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 13.7668ms
+2026-06-22 18:56:10.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 18:56:10.967 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 23.0104ms
+2026-06-22 18:56:10.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 15.4773ms
+2026-06-22 18:56:10.976 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 18:56:10.981 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 19.1958ms
+2026-06-22 18:56:11.010 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.014ms
+2026-06-22 18:56:11.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 18:56:11.115 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/favicon-32x32.png - null null
+2026-06-22 18:56:11.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/favicon-32x32.png - 304 null null 4.3847ms
+2026-06-22 18:56:11.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.1684ms
+2026-06-22 18:56:23.179 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/4/1 - null null
+2026-06-22 18:56:23.185 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:56:23.187 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 18:56:23.209 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 18:56:23.215 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 18:56:23.217 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 27.4893ms
+2026-06-22 18:56:23.219 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:56:23.221 +05:30 [INF] HTTP GET /api/Books/4/1 responded 200 in 36.7729 ms
+2026-06-22 18:56:23.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/4/1 - 200 null application/json; charset=utf-8 46.6821ms
+2026-06-22 18:56:59.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/3fa85f64-5717-4562-b3fc-2c963f66afa6 - null null
+2026-06-22 18:56:59.563 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 18:56:59.578 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 18:56:59.663 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 18:56:59.670 +05:30 [WRN] Book Not found.BookId : 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2026-06-22 18:56:59.674 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 91.6916ms
+2026-06-22 18:56:59.678 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 18:56:59.680 +05:30 [ERR] HTTP GET /api/Books/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 500 in 116.7348 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 3fa85f64-5717-4562-b3fc-2c963f66afa6 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method68(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 18:56:59.765 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 3fa85f64-5717-4562-b3fc-2c963f66afa6 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method68(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 18:56:59.782 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/3fa85f64-5717-4562-b3fc-2c963f66afa6 - 404 null application/json; charset=utf-8 223.2398ms
+2026-06-22 18:57:33.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/10/1 - null null
+2026-06-22 18:57:33.528 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:57:33.530 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 18:57:33.542 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 18:57:33.548 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 18:57:33.552 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 16.6142ms
+2026-06-22 18:57:33.556 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 18:57:33.559 +05:30 [INF] HTTP GET /api/Books/10/1 responded 200 in 30.9611 ms
+2026-06-22 18:57:33.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/10/1 - 200 null application/json; charset=utf-8 38.2558ms
+2026-06-22 19:00:16.535 +05:30 [INF] App started
+2026-06-22 19:00:16.785 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 19:00:16.790 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 19:00:17.004 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:00:17.009 +05:30 [INF] Hosting environment: Development
+2026-06-22 19:00:17.011 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 19:00:17.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 19:00:17.583 +05:30 [INF] HTTP GET / responded 404 in 1.6023 ms
+2026-06-22 19:00:17.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 156.5555ms
+2026-06-22 19:00:17.619 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 19:00:25.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 19:00:25.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 102.1192ms
+2026-06-22 19:00:25.892 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 19:00:25.892 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 19:00:25.892 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 19:00:25.893 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 19:00:25.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 31.8356ms
+2026-06-22 19:00:25.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 38.5001ms
+2026-06-22 19:00:25.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 39.1363ms
+2026-06-22 19:00:25.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 38.869ms
+2026-06-22 19:00:25.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 19:00:25.935 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 19:00:25.939 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 19:00:25.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 14.5721ms
+2026-06-22 19:00:25.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 12.765ms
+2026-06-22 19:00:26.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.0924ms
+2026-06-22 19:00:26.202 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 19:00:26.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.9286ms
+2026-06-22 19:01:22.628 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Books - application/json 117
+2026-06-22 19:01:22.637 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 19:01:22.672 +05:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] AddBook(LibraryManagement.Application.DTO.BookAddRequest) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 19:01:23.454 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-22 19:01:23.626 +05:30 [INF] created Book with Title : Test Title
+2026-06-22 19:01:23.634 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'LibraryManagement.Application.DTO.BookResponse'.
+2026-06-22 19:01:23.665 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API) in 984.3783ms
+2026-06-22 19:01:23.668 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 19:01:23.669 +05:30 [INF] HTTP POST /api/Books responded 201 in 1033.0332 ms
+2026-06-22 19:01:23.677 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Books - 201 null application/json; charset=utf-8 1048.9261ms
+2026-06-22 19:02:04.265 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/ffef56fa-ecfd-4c8f-92d8-88beca47df15 - null null
+2026-06-22 19:02:04.271 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 19:02:04.287 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 19:02:04.972 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 19:02:05.000 +05:30 [WRN] Book Not found.BookId : ffef56fa-ecfd-4c8f-92d8-88beca47df15
+2026-06-22 19:02:05.006 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 715.1273ms
+2026-06-22 19:02:05.009 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 19:02:05.011 +05:30 [ERR] HTTP GET /api/Books/ffef56fa-ecfd-4c8f-92d8-88beca47df15 responded 500 in 740.3110 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with ffef56fa-ecfd-4c8f-92d8-88beca47df15 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 19:02:05.061 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with ffef56fa-ecfd-4c8f-92d8-88beca47df15 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 19:02:05.077 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/ffef56fa-ecfd-4c8f-92d8-88beca47df15 - 404 null application/json; charset=utf-8 812.0422ms
+2026-06-22 19:02:35.322 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/ffef56fa-ecfd-4c8f-92d8-88beca47df15 - null null
+2026-06-22 19:02:35.347 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 19:02:35.351 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 19:02:35.385 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 19:02:35.390 +05:30 [WRN] Book Not found.BookId : ffef56fa-ecfd-4c8f-92d8-88beca47df15
+2026-06-22 19:02:35.391 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 35.235ms
+2026-06-22 19:02:35.392 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 19:02:35.393 +05:30 [ERR] HTTP GET /api/Books/ffef56fa-ecfd-4c8f-92d8-88beca47df15 responded 500 in 64.0935 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with ffef56fa-ecfd-4c8f-92d8-88beca47df15 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 19:02:35.404 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with ffef56fa-ecfd-4c8f-92d8-88beca47df15 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 19:02:35.414 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/ffef56fa-ecfd-4c8f-92d8-88beca47df15 - 404 null application/json; charset=utf-8 92.323ms
+2026-06-22 19:03:11.905 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Books - application/json 117
+2026-06-22 19:03:11.909 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 19:03:11.911 +05:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] AddBook(LibraryManagement.Application.DTO.BookAddRequest) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 19:03:11.945 +05:30 [INF] created Book with Title : Test Title
+2026-06-22 19:03:11.947 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'LibraryManagement.Application.DTO.BookResponse'.
+2026-06-22 19:03:11.949 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API) in 9.193ms
+2026-06-22 19:03:11.952 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 19:03:11.954 +05:30 [INF] HTTP POST /api/Books responded 201 in 44.6482 ms
+2026-06-22 19:03:11.956 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Books - 201 null application/json; charset=utf-8 51.3765ms
+2026-06-22 19:03:35.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/a7a929c4-a4bf-4dfe-b51b-c6c08c4736a1 - null null
+2026-06-22 19:03:35.074 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 19:03:35.095 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 19:03:35.107 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 19:03:35.111 +05:30 [WRN] Book Not found.BookId : a7a929c4-a4bf-4dfe-b51b-c6c08c4736a1
+2026-06-22 19:03:35.113 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 9.807ms
+2026-06-22 19:03:35.115 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 19:03:35.118 +05:30 [ERR] HTTP GET /api/Books/a7a929c4-a4bf-4dfe-b51b-c6c08c4736a1 responded 500 in 44.8342 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with a7a929c4-a4bf-4dfe-b51b-c6c08c4736a1 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 19:03:35.132 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with a7a929c4-a4bf-4dfe-b51b-c6c08c4736a1 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 35
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 19:03:35.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/a7a929c4-a4bf-4dfe-b51b-c6c08c4736a1 - 404 null application/json; charset=utf-8 78.6442ms
+2026-06-22 19:09:02.632 +05:30 [INF] App started
+2026-06-22 19:09:02.962 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 19:09:02.967 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 19:09:03.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 19:09:03.237 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:09:03.238 +05:30 [INF] Hosting environment: Development
+2026-06-22 19:09:03.240 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 19:09:03.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 173.2469ms
+2026-06-22 19:09:03.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 19:09:03.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 19:09:03.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 19:09:03.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 28.027ms
+2026-06-22 19:09:03.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 28.0274ms
+2026-06-22 19:09:03.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 27.8739ms
+2026-06-22 19:09:03.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 19:09:03.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 19:09:03.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 19:09:03.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 19.1946ms
+2026-06-22 19:09:03.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 20.5631ms
+2026-06-22 19:09:03.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 31.5839ms
+2026-06-22 19:09:03.678 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 19:09:03.725 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.6623ms
+2026-06-22 19:09:03.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 19:09:03.831 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/favicon-32x32.png - null null
+2026-06-22 19:09:03.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/favicon-32x32.png - 304 null null 13.3796ms
+2026-06-22 19:09:03.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.0386ms
+2026-06-22 19:32:51.384 +05:30 [INF] App started
+2026-06-22 19:32:51.658 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 19:32:51.664 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 19:32:51.948 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:32:51.949 +05:30 [INF] Hosting environment: Development
+2026-06-22 19:32:51.950 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 19:32:52.349 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 19:32:52.511 +05:30 [INF] HTTP GET / responded 404 in 2.0816 ms
+2026-06-22 19:32:52.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 174.4823ms
+2026-06-22 19:32:52.531 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 19:33:19.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 19:33:19.662 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 106.1262ms
+2026-06-22 19:33:19.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 19:33:19.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 19:33:19.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 19:33:19.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 19:33:19.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 19:33:19.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 19:33:19.718 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 34.9405ms
+2026-06-22 19:33:19.718 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 34.5648ms
+2026-06-22 19:33:19.720 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 16.0627ms
+2026-06-22 19:33:19.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 36.577ms
+2026-06-22 19:33:19.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 15.1024ms
+2026-06-22 19:33:19.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 19:33:19.732 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 48.364ms
+2026-06-22 19:33:19.804 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.2224ms
+2026-06-22 19:33:19.887 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 19:33:19.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.8184ms
+2026-06-22 19:40:07.948 +05:30 [INF] App started
+2026-06-22 19:40:08.329 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 19:40:08.335 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 19:40:08.840 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 19:40:08.860 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:40:08.864 +05:30 [INF] Hosting environment: Development
+2026-06-22 19:40:08.865 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 19:40:09.008 +05:30 [INF] HTTP GET / responded 404 in 2.3290 ms
+2026-06-22 19:40:09.018 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 183.5805ms
+2026-06-22 19:40:09.031 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 19:40:17.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 19:40:17.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 107.2994ms
+2026-06-22 19:40:17.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 19:40:17.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 19:40:17.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 19:40:17.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 19:40:17.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 19:40:17.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 45.2102ms
+2026-06-22 19:40:17.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 29.1859ms
+2026-06-22 19:40:17.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 45.7602ms
+2026-06-22 19:40:17.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 45.7217ms
+2026-06-22 19:40:17.676 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 19:40:17.687 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 19:40:17.686 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 59.3142ms
+2026-06-22 19:40:17.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 28.6622ms
+2026-06-22 19:40:17.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.5129ms
+2026-06-22 19:40:17.835 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 19:40:17.861 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.2316ms
+2026-06-22 20:20:40.261 +05:30 [INF] App started
+2026-06-22 20:20:40.522 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 20:20:40.528 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 20:20:40.933 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 20:20:40.941 +05:30 [INF] Hosting environment: Development
+2026-06-22 20:20:40.942 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 20:20:41.233 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 20:20:41.400 +05:30 [INF] HTTP GET / responded 404 in 2.0306 ms
+2026-06-22 20:20:41.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 180.3601ms
+2026-06-22 20:20:41.426 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 20:20:45.529 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 20:20:45.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 99.7272ms
+2026-06-22 20:20:45.652 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 20:20:45.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 20:20:45.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 20:20:45.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 20:20:45.681 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 20:20:45.695 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 41.744ms
+2026-06-22 20:20:45.695 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 42.65ms
+2026-06-22 20:20:45.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 42.0803ms
+2026-06-22 20:20:45.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 15.1515ms
+2026-06-22 20:20:45.699 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 20:20:45.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 20:20:45.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 55.6325ms
+2026-06-22 20:20:45.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 15.4519ms
+2026-06-22 20:20:45.777 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.7211ms
+2026-06-22 20:20:45.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 20:20:45.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.8504ms
+2026-06-22 20:22:10.353 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Books - application/json 108
+2026-06-22 20:22:10.359 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 20:22:10.393 +05:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] AddBook(LibraryManagement.Application.DTO.BookAddRequest) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:22:11.463 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-22 20:22:11.658 +05:30 [INF] created Book with Title : Clean Code
+2026-06-22 20:22:11.664 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'LibraryManagement.Application.DTO.BookResponse'.
+2026-06-22 20:22:11.704 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API) in 1301.6851ms
+2026-06-22 20:22:11.707 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.AddBook (LibraryManagement.API)'
+2026-06-22 20:22:11.707 +05:30 [INF] HTTP POST /api/Books responded 201 in 1350.4179 ms
+2026-06-22 20:22:11.716 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Books - 201 null application/json; charset=utf-8 1363.5939ms
+2026-06-22 20:24:10.245 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 - null null
+2026-06-22 20:24:10.250 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:24:10.264 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:24:13.933 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 20:24:13.965 +05:30 [WRN] Book Not found.BookId : 0cb54f94-ef71-41d3-9d12-a1c3cc864b27
+2026-06-22 20:24:13.970 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 3702.5314ms
+2026-06-22 20:24:13.973 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:24:13.975 +05:30 [ERR] HTTP GET /api/Books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 responded 500 in 3724.7790 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 0cb54f94-ef71-41d3-9d12-a1c3cc864b27 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 53
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 20:24:14.047 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 0cb54f94-ef71-41d3-9d12-a1c3cc864b27 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 53
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 20:24:14.065 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 - 404 null application/json; charset=utf-8 3819.6082ms
+2026-06-22 20:27:02.112 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 - null null
+2026-06-22 20:27:02.116 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:27:02.117 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:27:02.163 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 20:27:02.167 +05:30 [WRN] Book Not found.BookId : 0cb54f94-ef71-41d3-9d12-a1c3cc864b27
+2026-06-22 20:27:02.168 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 49.015ms
+2026-06-22 20:27:02.170 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:27:02.172 +05:30 [ERR] HTTP GET /api/Books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 responded 500 in 55.8917 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 0cb54f94-ef71-41d3-9d12-a1c3cc864b27 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 53
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 20:27:02.188 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 0cb54f94-ef71-41d3-9d12-a1c3cc864b27 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 53
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 20:27:02.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 - 404 null application/json; charset=utf-8 87.7078ms
+2026-06-22 20:32:10.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 20:32:10.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 4.4821ms
+2026-06-22 20:32:10.795 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 20:32:10.879 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.6482ms
+2026-06-22 20:32:20.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 - null null
+2026-06-22 20:32:20.443 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:32:20.446 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:32:20.469 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 20:32:20.474 +05:30 [WRN] Book Not found.BookId : 0cb54f94-ef71-41d3-9d12-a1c3cc864b27
+2026-06-22 20:32:20.476 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 26.5665ms
+2026-06-22 20:32:20.477 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:32:20.478 +05:30 [ERR] HTTP GET /api/books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 responded 500 in 35.4718 ms
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 0cb54f94-ef71-41d3-9d12-a1c3cc864b27 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 53
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-22 20:32:20.494 +05:30 [ERR] Unhandled Exception occurred
+LibraryManagement.Application.Exceptions.NotFoundException: Book with 0cb54f94-ef71-41d3-9d12-a1c3cc864b27 not found. Please provide valid BookId
+   at LibraryManagement.Application.Services.BookService.GetBookByIdAsync(Guid BookId) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Application\Services\BookService.cs:line 118
+   at LibraryManagement.API.Controllers.BooksController.GetBookById(Guid id) in C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web\Controllers\BooksController.cs:line 53
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-06-22 20:32:20.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/books/0cb54f94-ef71-41d3-9d12-a1c3cc864b27 - 404 null application/json; charset=utf-8 83.5534ms
+2026-06-22 20:32:20.555 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/favicon.ico - null null
+2026-06-22 20:32:20.560 +05:30 [INF] HTTP GET /favicon.ico responded 404 in 0.0265 ms
+2026-06-22 20:32:20.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/favicon.ico - 404 0 null 7.1643ms
+2026-06-22 20:32:20.567 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/favicon.ico, Response status code: 404
+2026-06-22 20:39:25.681 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 20:39:25.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 8.5775ms
+2026-06-22 20:39:25.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 20:39:25.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 20:39:25.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 20:39:25.724 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 20:39:25.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 6.6661ms
+2026-06-22 20:39:25.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 9.1074ms
+2026-06-22 20:39:25.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 11.7477ms
+2026-06-22 20:39:25.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 10.2001ms
+2026-06-22 20:39:25.737 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 20:39:25.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 20:39:25.743 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 20:39:25.751 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 14.3089ms
+2026-06-22 20:39:25.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 14.2777ms
+2026-06-22 20:39:25.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.955ms
+2026-06-22 20:39:25.876 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 20:39:25.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.0596ms
+2026-06-22 20:41:19.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/10/1 - null null
+2026-06-22 20:41:19.299 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:41:19.314 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:41:19.355 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 20:41:19.362 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 20:41:19.368 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 51.407ms
+2026-06-22 20:41:19.371 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:41:19.373 +05:30 [INF] HTTP GET /api/Books/10/1 responded 200 in 74.0420 ms
+2026-06-22 20:41:19.376 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/10/1 - 200 null application/json; charset=utf-8 80.1152ms
+2026-06-22 20:47:14.608 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/books/1/2 - null null
+2026-06-22 20:47:14.615 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:47:14.618 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:47:14.637 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 20:47:14.664 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 20:47:14.667 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 46.0552ms
+2026-06-22 20:47:14.669 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:47:14.670 +05:30 [INF] HTTP GET /api/books/1/2 responded 200 in 55.9492 ms
+2026-06-22 20:47:14.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/books/1/2 - 200 null application/json; charset=utf-8 65.6157ms
+2026-06-22 20:47:45.645 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/books/4/2 - null null
+2026-06-22 20:47:45.651 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:47:45.652 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:47:45.661 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 20:47:45.666 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 20:47:45.669 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 14.0462ms
+2026-06-22 20:47:45.671 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:47:45.672 +05:30 [INF] HTTP GET /api/books/4/2 responded 200 in 21.6084 ms
+2026-06-22 20:47:45.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/books/4/2 - 200 null application/json; charset=utf-8 29.4475ms
+2026-06-22 20:47:52.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/books/4/1 - null null
+2026-06-22 20:47:52.391 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:47:52.393 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:47:52.398 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 20:47:52.402 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 20:47:52.403 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 8.1367ms
+2026-06-22 20:47:52.405 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:47:52.406 +05:30 [INF] HTTP GET /api/books/4/1 responded 200 in 15.1599 ms
+2026-06-22 20:47:52.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/books/4/1 - 200 null application/json; charset=utf-8 22.1926ms
+2026-06-22 20:48:08.344 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/books/4/2 - null null
+2026-06-22 20:48:08.349 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:48:08.351 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:48:08.358 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 20:48:08.364 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 20:48:08.366 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 11.8367ms
+2026-06-22 20:48:08.369 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:48:08.370 +05:30 [INF] HTTP GET /api/books/4/2 responded 200 in 20.8127 ms
+2026-06-22 20:48:08.376 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/books/4/2 - 200 null application/json; charset=utf-8 32.099ms
+2026-06-22 20:48:36.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/books/1/4 - null null
+2026-06-22 20:48:36.767 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:48:36.769 +05:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllBooks(Int32, Int32) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:48:36.776 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+ORDER BY [b].[Title]
+OFFSET @p ROWS FETCH NEXT @p1 ROWS ONLY
+2026-06-22 20:48:36.782 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Domain.Entities.PagedResult`1[[LibraryManagement.Application.DTO.BookResponse, LibraryManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 20:48:36.785 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API) in 11.3044ms
+2026-06-22 20:48:36.787 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetAllBooks (LibraryManagement.API)'
+2026-06-22 20:48:36.788 +05:30 [INF] HTTP GET /api/books/1/4 responded 200 in 21.1142 ms
+2026-06-22 20:48:36.791 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/books/1/4 - 200 null application/json; charset=utf-8 30.4033ms
+2026-06-22 20:52:34.181 +05:30 [INF] App started
+2026-06-22 20:52:34.740 +05:30 [INF] Now listening on: https://localhost:7091
+2026-06-22 20:52:34.747 +05:30 [INF] Now listening on: http://localhost:5195
+2026-06-22 20:52:35.796 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 20:52:36.151 +05:30 [INF] Hosting environment: Development
+2026-06-22 20:52:36.153 +05:30 [INF] Content root path: C:\Users\Admin\source\repos\LibraryManagementSolution\LibraryManagement.Web
+2026-06-22 20:52:36.246 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/ - null null
+2026-06-22 20:52:36.562 +05:30 [INF] HTTP GET / responded 404 in 3.8500 ms
+2026-06-22 20:52:36.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/ - 404 null null 347.9356ms
+2026-06-22 20:52:36.589 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/, Response status code: 404
+2026-06-22 20:52:40.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2026-06-22 20:52:40.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 304 null null 197.0412ms
+2026-06-22 20:52:40.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - null null
+2026-06-22 20:52:40.360 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.css - null null
+2026-06-22 20:52:40.361 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 20:52:40.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2026-06-22 20:52:40.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 20:52:40.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui.css - 304 null null 59.6034ms
+2026-06-22 20:52:40.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 304 null null 45.4994ms
+2026-06-22 20:52:40.432 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.css - 304 null null 72.5544ms
+2026-06-22 20:52:40.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.js - null null
+2026-06-22 20:52:40.465 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-standalone-preset.js - 304 null null 55.6182ms
+2026-06-22 20:52:40.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.js - 304 null null 8.7885ms
+2026-06-22 20:52:40.470 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2026-06-22 20:52:40.481 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 120.2326ms
+2026-06-22 20:52:40.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.2055ms
+2026-06-22 20:52:40.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2026-06-22 20:52:40.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.0862ms
+2026-06-22 20:54:16.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Books/ec24be6c-5bcb-4780-b503-ae6ceb56b747 - null null
+2026-06-22 20:54:16.505 +05:30 [INF] Executing endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:54:16.580 +05:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LibraryManagement.Application.DTO.BookResponse]] GetBookById(System.Guid) on controller LibraryManagement.API.Controllers.BooksController (LibraryManagement.API).
+2026-06-22 20:55:13.926 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-22 20:55:15.276 +05:30 [INF] Executed DbCommand (130ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Price], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[BookId] = @id
+2026-06-22 20:56:12.689 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagement.Application.DTO.BookResponse'.
+2026-06-22 20:56:12.785 +05:30 [INF] Executed action LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API) in 116188.7999ms
+2026-06-22 20:56:12.789 +05:30 [INF] Executed endpoint 'LibraryManagement.API.Controllers.BooksController.GetBookById (LibraryManagement.API)'
+2026-06-22 20:56:12.792 +05:30 [INF] HTTP GET /api/Books/ec24be6c-5bcb-4780-b503-ae6ceb56b747 responded 200 in 116291.9164 ms
+2026-06-22 20:56:12.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Books/ec24be6c-5bcb-4780-b503-ae6ceb56b747 - 200 null application/json; charset=utf-8 116354.2713ms

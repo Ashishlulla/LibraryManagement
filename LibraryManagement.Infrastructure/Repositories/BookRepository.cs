@@ -58,6 +58,8 @@ namespace LibraryManagement.Infrastructure.Repositories
         //GetBookById Method
         public async Task<Book?> GetByIdAsync(Guid id)
         {
+            Console.WriteLine($"Repository searching: {id}");
+
             return await _dbContext.Books.FirstOrDefaultAsync(b=>b.BookId == id);
         }
 
